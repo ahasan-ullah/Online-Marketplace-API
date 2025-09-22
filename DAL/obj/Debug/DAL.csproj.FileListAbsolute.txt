@@ -12,3 +12,17 @@ D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.dll
 D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.pdb
 D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.Migrations.usertableadded.resources
 D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\Ahasan\Online-Marketplace-API\DAL\bin\Debug\DAL.dll.config
+D:\Ahasan\Online-Marketplace-API\DAL\bin\Debug\DAL.dll
+D:\Ahasan\Online-Marketplace-API\DAL\bin\Debug\DAL.pdb
+D:\Ahasan\Online-Marketplace-API\DAL\bin\Debug\EntityFramework.dll
+D:\Ahasan\Online-Marketplace-API\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ahasan\Online-Marketplace-API\DAL\bin\Debug\EntityFramework.xml
+D:\Ahasan\Online-Marketplace-API\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.dll
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.pdb
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.test.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

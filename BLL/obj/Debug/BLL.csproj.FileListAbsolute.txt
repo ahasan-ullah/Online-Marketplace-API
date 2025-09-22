@@ -10,3 +10,15 @@ D:\Ahasan\Online Marketplace API\BLL\obj\Debug\BLL.dll
 D:\Ahasan\Online Marketplace API\BLL\obj\Debug\BLL.pdb
 D:\Ahasan\Online Marketplace API\BLL\bin\Debug\EntityFramework.dll
 D:\Ahasan\Online Marketplace API\BLL\bin\Debug\EntityFramework.xml
+D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\BLL.dll
+D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\BLL.pdb
+D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\DAL.dll
+D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\EntityFramework.dll
+D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\DAL.pdb
+D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\DAL.dll.config
+D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\EntityFramework.xml
+D:\Ahasan\Online-Marketplace-API\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Ahasan\Online-Marketplace-API\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Ahasan\Online-Marketplace-API\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\Ahasan\Online-Marketplace-API\BLL\obj\Debug\BLL.dll
+D:\Ahasan\Online-Marketplace-API\BLL\obj\Debug\BLL.pdb
