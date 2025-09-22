@@ -10,3 +10,5 @@ D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cach
 D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.dll
 D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.pdb
+D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.Migrations.usertableadded.resources
+D:\Ahasan\Online Marketplace API\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

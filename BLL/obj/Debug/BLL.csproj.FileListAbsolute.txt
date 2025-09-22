@@ -8,3 +8,5 @@ D:\Ahasan\Online Marketplace API\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cach
 D:\Ahasan\Online Marketplace API\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\Ahasan\Online Marketplace API\BLL\obj\Debug\BLL.dll
 D:\Ahasan\Online Marketplace API\BLL\obj\Debug\BLL.pdb
+D:\Ahasan\Online Marketplace API\BLL\bin\Debug\EntityFramework.dll
+D:\Ahasan\Online Marketplace API\BLL\bin\Debug\EntityFramework.xml
