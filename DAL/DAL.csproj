@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="EF\Tables\User.cs" />
     <Compile Include="EF\MarketContext.cs" />
+    <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202509220856362_test.cs" />
     <Compile Include="Migrations\202509220856362_test.Designer.cs">
       <DependentUpon>202509220856362_test.cs</DependentUpon>
