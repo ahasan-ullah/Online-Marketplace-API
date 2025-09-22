@@ -26,3 +26,4 @@ D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.dll
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.pdb
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.test.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.usersaddedtousertable.resources

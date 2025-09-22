@@ -58,6 +58,10 @@
     <Compile Include="Migrations\202509220856362_test.Designer.cs">
       <DependentUpon>202509220856362_test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202509221107174_users added to user table.cs" />
+    <Compile Include="Migrations\202509221107174_users added to user table.Designer.cs">
+      <DependentUpon>202509221107174_users added to user table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202509220856362_test.resx">
       <DependentUpon>202509220856362_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509221107174_users added to user table.resx">
+      <DependentUpon>202509221107174_users added to user table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
