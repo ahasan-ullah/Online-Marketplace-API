@@ -32,3 +32,5 @@ D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.databaseupdated.re
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.userinfoaddedtothetable.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.producttableaddedwithvalues.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.orderandorderitemtableaddedfluentapiadded.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.cartandcartitemtableadded.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.incarttableforeignkeyadded.resources

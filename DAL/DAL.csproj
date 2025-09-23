@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="EF\Tables\Cart.cs" />
+    <Compile Include="EF\Tables\CartItem.cs" />
     <Compile Include="EF\Tables\Order.cs" />
     <Compile Include="EF\Tables\OrderItem.cs" />
     <Compile Include="EF\Tables\Product.cs" />
@@ -86,6 +88,14 @@
     <Compile Include="Migrations\202509230943442_order and order item table added fluent api added.Designer.cs">
       <DependentUpon>202509230943442_order and order item table added fluent api added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202509231028027_cart and cart item table added.cs" />
+    <Compile Include="Migrations\202509231028027_cart and cart item table added.Designer.cs">
+      <DependentUpon>202509231028027_cart and cart item table added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202509231031543_in cart table foreign key added.cs" />
+    <Compile Include="Migrations\202509231031543_in cart table foreign key added.Designer.cs">
+      <DependentUpon>202509231031543_in cart table foreign key added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
@@ -115,6 +125,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509230943442_order and order item table added fluent api added.resx">
       <DependentUpon>202509230943442_order and order item table added fluent api added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509231028027_cart and cart item table added.resx">
+      <DependentUpon>202509231028027_cart and cart item table added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509231031543_in cart table foreign key added.resx">
+      <DependentUpon>202509231031543_in cart table foreign key added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
