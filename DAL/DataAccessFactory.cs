@@ -15,5 +15,10 @@ namespace DAL
         {
             return new UserRepo();
         }
+
+        public static IRepo<Product,int,bool> ProductData()
+        {
+            return new ProductRepo();
+        }
     }
 }
