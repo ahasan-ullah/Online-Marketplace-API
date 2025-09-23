@@ -56,6 +56,7 @@
     <Compile Include="EF\Tables\CartItem.cs" />
     <Compile Include="EF\Tables\Order.cs" />
     <Compile Include="EF\Tables\OrderItem.cs" />
+    <Compile Include="EF\Tables\Payment.cs" />
     <Compile Include="EF\Tables\Product.cs" />
     <Compile Include="EF\Tables\User.cs" />
     <Compile Include="EF\MarketContext.cs" />
@@ -64,21 +65,9 @@
     <Compile Include="Migrations\202509220856362_test.Designer.cs">
       <DependentUpon>202509220856362_test.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202509221107174_users added to user table.cs" />
-    <Compile Include="Migrations\202509221107174_users added to user table.Designer.cs">
-      <DependentUpon>202509221107174_users added to user table.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202509230626105_email column added to user table.cs" />
     <Compile Include="Migrations\202509230626105_email column added to user table.Designer.cs">
       <DependentUpon>202509230626105_email column added to user table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202509230742366_database updated.cs" />
-    <Compile Include="Migrations\202509230742366_database updated.Designer.cs">
-      <DependentUpon>202509230742366_database updated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202509230746523_user info added to the table.cs" />
-    <Compile Include="Migrations\202509230746523_user info added to the table.Designer.cs">
-      <DependentUpon>202509230746523_user info added to the table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202509230801330_product table added with values.cs" />
     <Compile Include="Migrations\202509230801330_product table added with values.Designer.cs">
@@ -96,6 +85,10 @@
     <Compile Include="Migrations\202509231031543_in cart table foreign key added.Designer.cs">
       <DependentUpon>202509231031543_in cart table foreign key added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202509231046522_payment table added.cs" />
+    <Compile Include="Migrations\202509231046522_payment table added.Designer.cs">
+      <DependentUpon>202509231046522_payment table added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
@@ -108,17 +101,8 @@
     <EmbeddedResource Include="Migrations\202509220856362_test.resx">
       <DependentUpon>202509220856362_test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202509221107174_users added to user table.resx">
-      <DependentUpon>202509221107174_users added to user table.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509230626105_email column added to user table.resx">
       <DependentUpon>202509230626105_email column added to user table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202509230742366_database updated.resx">
-      <DependentUpon>202509230742366_database updated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202509230746523_user info added to the table.resx">
-      <DependentUpon>202509230746523_user info added to the table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509230801330_product table added with values.resx">
       <DependentUpon>202509230801330_product table added with values.cs</DependentUpon>
@@ -131,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509231031543_in cart table foreign key added.resx">
       <DependentUpon>202509231031543_in cart table foreign key added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509231046522_payment table added.resx">
+      <DependentUpon>202509231046522_payment table added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

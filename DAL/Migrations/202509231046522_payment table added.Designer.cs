@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class usersaddedtousertable : IMigrationMetadata
+    public sealed partial class paymenttableadded : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(usersaddedtousertable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(paymenttableadded));
         
         string IMigrationMetadata.Id
         {
-            get { return "202509221107174_users added to user table"; }
+            get { return "202509231046522_payment table added"; }
         }
         
         string IMigrationMetadata.Source
