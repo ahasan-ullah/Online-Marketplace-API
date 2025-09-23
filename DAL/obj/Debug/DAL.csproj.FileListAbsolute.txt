@@ -28,3 +28,6 @@ D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.test.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.usersaddedtousertable.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.emailcolumnaddedtousertable.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.databaseupdated.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.userinfoaddedtothetable.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.producttableaddedwithvalues.resources

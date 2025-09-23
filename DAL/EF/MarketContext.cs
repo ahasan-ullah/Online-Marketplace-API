@@ -11,5 +11,6 @@ namespace DAL.EF
     public class MarketContext:DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

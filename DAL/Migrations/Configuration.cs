@@ -1,5 +1,6 @@
 ﻿namespace DAL.Migrations
 {
+    using DAL.EF.Tables;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -27,11 +28,28 @@
             //    {
             //        Name = "Name" + i,
             //        Password = "Password" + i,
+            //        Email="example"+i+"@email.com",
             //        Role = i % 2 == 0 ? "Admin" : "User",
             //        Address = "Address " + i,
             //        CreatedAt = DateTime.Now.AddDays(-i)
             //    });
             //}
+
+            var userIds = context.Users.Select(u => u.Id).ToList();
+
+            for (int i = 0; i < 50; i++)
+            {
+                context.Products.AddOrUpdate(new EF.Tables.Product
+                {
+                    Name = "Product " + i,
+                    Description = "Description for product " + i,
+                    Price = (decimal)Math.Round(new Random().Next(100, 1000) + new Random().NextDouble(), 2),
+                    Stock = new Random().Next(1, 50),
+                    Category = i % 2 == 0 ? "Electronics" : "Clothing",
+                    SellerId = userIds[i % userIds.Count],
+                    CreatedAt = DateTime.Now.AddDays(-i)
+                });
+            }
         }
     }
 }

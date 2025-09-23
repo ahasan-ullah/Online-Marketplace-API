@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="EF\Tables\Product.cs" />
     <Compile Include="EF\Tables\User.cs" />
     <Compile Include="EF\MarketContext.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
@@ -66,6 +67,18 @@
     <Compile Include="Migrations\202509230626105_email column added to user table.cs" />
     <Compile Include="Migrations\202509230626105_email column added to user table.Designer.cs">
       <DependentUpon>202509230626105_email column added to user table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202509230742366_database updated.cs" />
+    <Compile Include="Migrations\202509230742366_database updated.Designer.cs">
+      <DependentUpon>202509230742366_database updated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202509230746523_user info added to the table.cs" />
+    <Compile Include="Migrations\202509230746523_user info added to the table.Designer.cs">
+      <DependentUpon>202509230746523_user info added to the table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202509230801330_product table added with values.cs" />
+    <Compile Include="Migrations\202509230801330_product table added with values.Designer.cs">
+      <DependentUpon>202509230801330_product table added with values.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +97,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509230626105_email column added to user table.resx">
       <DependentUpon>202509230626105_email column added to user table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509230742366_database updated.resx">
+      <DependentUpon>202509230742366_database updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509230746523_user info added to the table.resx">
+      <DependentUpon>202509230746523_user info added to the table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509230801330_product table added with values.resx">
+      <DependentUpon>202509230801330_product table added with values.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

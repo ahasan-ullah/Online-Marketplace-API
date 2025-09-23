@@ -1,31 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL.EF.Tables
 {
-    public class User
+    public class Product
     {
         [Required]
         public int Id { get; set; }
         [Required]
         [StringLength(20)]
         public string Name { get; set; }
-        [Required, EmailAddress]
-        public string Email { get; set; }
         [Required]
-        [StringLength(20)]
-        public string Password { get; set; }
+        [StringLength(500)]
+        public string Description { get; set; }
         [Required]
-        public string Role { get; set; }
+        public decimal Price { get; set; }
         [Required]
-        public string Address { get; set; }
+        public int Stock { get; set; }
+        [Required]
+        public string Category { get; set; }
+        [Required]
+        [ForeignKey("Seller")]
+        public int SellerId { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual User Seller { get; set; }
     }
 }
