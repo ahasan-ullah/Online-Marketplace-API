@@ -63,6 +63,10 @@
     <Compile Include="Migrations\202509221107174_users added to user table.Designer.cs">
       <DependentUpon>202509221107174_users added to user table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202509230626105_email column added to user table.cs" />
+    <Compile Include="Migrations\202509230626105_email column added to user table.Designer.cs">
+      <DependentUpon>202509230626105_email column added to user table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
@@ -77,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509221107174_users added to user table.resx">
       <DependentUpon>202509221107174_users added to user table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509230626105_email column added to user table.resx">
+      <DependentUpon>202509230626105_email column added to user table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
