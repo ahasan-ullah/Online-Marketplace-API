@@ -21,7 +21,7 @@ namespace BLL.Services
             return new Mapper(config);
         }
         //getting all user list
-        public static List<UserDTO> GetUsers()
+        public static List<UserDTO> GetUser()
         {
             var users = DataAccessFactory.UserData().Get();
 
