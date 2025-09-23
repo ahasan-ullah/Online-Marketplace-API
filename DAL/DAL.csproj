@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="EF\Tables\Order.cs" />
+    <Compile Include="EF\Tables\OrderItem.cs" />
     <Compile Include="EF\Tables\Product.cs" />
     <Compile Include="EF\Tables\User.cs" />
     <Compile Include="EF\MarketContext.cs" />
@@ -80,6 +82,10 @@
     <Compile Include="Migrations\202509230801330_product table added with values.Designer.cs">
       <DependentUpon>202509230801330_product table added with values.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202509230943442_order and order item table added fluent api added.cs" />
+    <Compile Include="Migrations\202509230943442_order and order item table added fluent api added.Designer.cs">
+      <DependentUpon>202509230943442_order and order item table added fluent api added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509230801330_product table added with values.resx">
       <DependentUpon>202509230801330_product table added with values.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509230943442_order and order item table added fluent api added.resx">
+      <DependentUpon>202509230943442_order and order item table added fluent api added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

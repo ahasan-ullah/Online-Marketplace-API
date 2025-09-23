@@ -22,6 +22,8 @@
             //  to avoid creating duplicate seed data.
 
 
+            //seed nethidf for user data
+
             //for (int i = 0; i < 20; i++)
             //{
             //    context.Users.AddOrUpdate(new EF.Tables.User
@@ -35,21 +37,32 @@
             //    });
             //}
 
-            var userIds = context.Users.Select(u => u.Id).ToList();
+            //seed for product data
 
-            for (int i = 0; i < 50; i++)
-            {
-                context.Products.AddOrUpdate(new EF.Tables.Product
-                {
-                    Name = "Product " + i,
-                    Description = "Description for product " + i,
-                    Price = (decimal)Math.Round(new Random().Next(100, 1000) + new Random().NextDouble(), 2),
-                    Stock = new Random().Next(1, 50),
-                    Category = i % 2 == 0 ? "Electronics" : "Clothing",
-                    SellerId = userIds[i % userIds.Count],
-                    CreatedAt = DateTime.Now.AddDays(-i)
-                });
-            }
+            //var userIds = context.Users.Select(u => u.Id).ToList();
+
+            //for (int i = 0; i < 50; i++)
+            //{
+            //    context.Products.AddOrUpdate(new EF.Tables.Product
+            //    {
+            //        Name = "Product " + i,
+            //        Description = "Description for product " + i,
+            //        Price = (decimal)Math.Round(new Random().Next(100, 1000) + new Random().NextDouble(), 2),
+            //        Stock = new Random().Next(1, 50),
+            //        Category = i % 2 == 0 ? "Electronics" : "Clothing",
+            //        SellerId = userIds[i % userIds.Count],
+            //        CreatedAt = DateTime.Now.AddDays(-i)
+            //    });
+            //}
+
+            //seed for order and order item data
+            //var userIds=context.Users.Select(u=>u.Id).ToList();
+            //var productIds=context.Products.Select(p=>p.Id).ToList();
+
+            //for(int i = 0; i < 20; i++)
+            //{
+            //    context.
+            //}
         }
     }
 }
