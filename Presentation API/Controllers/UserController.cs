@@ -40,5 +40,12 @@ namespace Presentation_API.Controllers
             var user=UserService.UpdateUser(obj);
             return Request.CreateResponse(System.Net.HttpStatusCode.OK, user);
         }
+        [HttpDelete]
+        [Route("delete/{id}")]
+        public HttpResponseMessage Delete(int id)
+        {
+            var result=UserService.DeleteUser(id);
+            return Request.CreateResponse(System.Net.HttpStatusCode.OK, result);
+        }
     }
 }

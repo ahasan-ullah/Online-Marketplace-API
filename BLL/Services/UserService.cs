@@ -55,5 +55,12 @@ namespace BLL.Services
             var user=GetMapper().Map<User>(obj);
             return DataAccessFactory.UserData().Update(user);
         }
+
+        //delete an exsiting user
+        public static bool DeleteUser(int id)
+        {
+            var result=DataAccessFactory.UserData().Delete(id);
+            return result;
+        }
     }
 }

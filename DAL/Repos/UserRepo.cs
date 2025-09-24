@@ -25,7 +25,16 @@ namespace DAL.Repos
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var orders = db.Orders.Where(o => o.BuyerId == id);
+            var extuser = Get(id);
+            if (orders!=null)
+            {
+                extuser.IsActive = false;
+                return db.SaveChanges() > 0;
+            }
+            
+            db.Users.Remove(extuser);
+            return db.SaveChanges()>0;
         }
 
         public List<User> Get()
