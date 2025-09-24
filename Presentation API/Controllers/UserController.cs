@@ -18,5 +18,12 @@ namespace Presentation_API.Controllers
             var users = UserService.GetUser();
             return Request.CreateResponse(System.Net.HttpStatusCode.OK, users);
         }
+        [HttpGet]
+        [Route("{id}")]
+        public HttpResponseMessage Get(int id)
+        {
+            var user=UserService.GetUser(id);
+            return Request.CreateResponse(System.Net.HttpStatusCode.OK, user);
+        }
     }
 }

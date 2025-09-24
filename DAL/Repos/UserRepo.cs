@@ -34,7 +34,7 @@ namespace DAL.Repos
 
         public User Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Users.Find(id);
         }
 
         public bool Update(User obj)

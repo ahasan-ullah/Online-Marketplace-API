@@ -27,5 +27,12 @@ namespace BLL.Services
 
             return GetMapper().Map<List<UserDTO>>(users);
         }
+
+        //getting single user by by
+        public static UserDTO GetUser(int id)
+        {
+            var user = DataAccessFactory.UserData().Get(id);
+            return GetMapper().Map<UserDTO>(user);
+        }
     }
 }
