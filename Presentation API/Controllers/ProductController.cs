@@ -34,5 +34,12 @@ namespace Presentation_API.Controllers
             var result=ProductService.CreateProduct(obj);
             return Request.CreateResponse(HttpStatusCode.OK, "Product Created Successfully");
         }
+        [HttpPatch]
+        [Route("update")]
+        public HttpResponseMessage Update(ProductDTO obj)
+        {
+            var result= ProductService.UpdateProduct(obj);
+            return Request.CreateResponse(HttpStatusCode.OK, "Product updated succressfully");
+        }
     }
 }

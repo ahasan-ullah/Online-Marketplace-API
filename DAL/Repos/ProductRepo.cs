@@ -40,7 +40,18 @@ namespace DAL.Repos
 
         public bool Update(Product obj)
         {
-            throw new NotImplementedException();
+            var product = Get(obj.Id);
+            if(product != null)
+            {
+                product.Name = obj.Name;
+                product.Description = obj.Description;
+                product.Price=obj.Price;
+                product.Stock = obj.Stock;
+                product.Category= obj.Category;
+
+                return db.SaveChanges() > 0;
+            }
+            return false;
         }
     }
 }
