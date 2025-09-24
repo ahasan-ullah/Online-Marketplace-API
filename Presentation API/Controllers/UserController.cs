@@ -33,5 +33,12 @@ namespace Presentation_API.Controllers
             var newUser = UserService.CreateUser(obj);
             return Request.CreateResponse(System.Net.HttpStatusCode.Created, newUser);
         }
+        [HttpPut]
+        [Route("update")]
+        public HttpResponseMessage Update(UserDTO obj)
+        {
+            var user=UserService.UpdateUser(obj);
+            return Request.CreateResponse(System.Net.HttpStatusCode.OK, user);
+        }
     }
 }

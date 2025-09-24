@@ -40,7 +40,18 @@ namespace DAL.Repos
 
         public bool Update(User obj)
         {
-            throw new NotImplementedException();
+            var extuser = db.Users.Find(obj.Id);
+
+            if (extuser!=null)
+            {
+                extuser.Name = obj.Name;
+                extuser.Email = obj.Email;
+                extuser.Password = obj.Password;
+                extuser.Address = obj.Address;
+                extuser.IsActive=obj.IsActive;
+                return db.SaveChanges()>0;
+            } 
+            return false;
         }
     }
 }

@@ -48,5 +48,12 @@ namespace BLL.Services
             }
             return false;
         }
+
+        //update an exsiting user
+        public static bool UpdateUser(UserDTO obj)
+        {
+            var user=GetMapper().Map<User>(obj);
+            return DataAccessFactory.UserData().Update(user);
+        }
     }
 }
