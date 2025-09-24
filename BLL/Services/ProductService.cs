@@ -33,5 +33,12 @@ namespace BLL.Services
             var product=DataAccessFactory.ProductData().Get(id);
             return GetMapper().Map<ProductDTO>(product);
         }
+
+        //creating new product
+        public static bool CreateProduct(ProductDTO obj)
+        {
+            var product=GetMapper().Map<Product>(obj);
+            return DataAccessFactory.ProductData().Create(product);
+        }
     }
 }

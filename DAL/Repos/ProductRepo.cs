@@ -19,7 +19,8 @@ namespace DAL.Repos
 
         public bool Create(Product obj)
         {
-            throw new NotImplementedException();
+            db.Products.Add(obj);
+            return db.SaveChanges() > 0;
         }
 
         public bool Delete(int iD)
