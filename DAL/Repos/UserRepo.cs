@@ -23,7 +23,7 @@ namespace DAL.Repos
             return db.SaveChanges()>0;
         }
 
-        public bool Delete(int iD)
+        public bool Delete(int id)
         {
             throw new NotImplementedException();
         }
@@ -40,7 +40,7 @@ namespace DAL.Repos
 
         public bool Update(User obj)
         {
-            var extuser = db.Users.Find(obj.Id);
+            var extuser = Get(obj.Id);
 
             if (extuser!=null)
             {

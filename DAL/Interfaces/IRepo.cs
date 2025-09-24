@@ -17,6 +17,6 @@ namespace DAL.Interfaces
 
         CLASS Get(ID id);
 
-        bool Delete(ID iD);
+        bool Delete(ID id);
     }
 }
