@@ -25,6 +25,7 @@ namespace DAL.EF.Tables
         public string Address { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; }
+        public bool IsActive { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<Order> Orders { get; set; }

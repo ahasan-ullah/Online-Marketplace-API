@@ -32,3 +32,4 @@ D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.orderandorderitemt
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.cartandcartitemtableadded.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.incarttableforeignkeyadded.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.paymenttableadded.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.isactiveattributeaddedtousemodel.resources
