@@ -34,7 +34,7 @@ namespace DAL.Repos
 
         public Product Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Products.Find(id);
         }
 
         public bool Update(Product obj)

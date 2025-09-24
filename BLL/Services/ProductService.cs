@@ -26,5 +26,12 @@ namespace BLL.Services
             var products = DataAccessFactory.ProductData().Get();
             return GetMapper().Map<List<ProductDTO>>(products);
         }
+
+        //getting products based on the id
+        public static ProductDTO GetProduct(int id)
+        {
+            var product=DataAccessFactory.ProductData().Get(id);
+            return GetMapper().Map<ProductDTO>(product);
+        }
     }
 }
