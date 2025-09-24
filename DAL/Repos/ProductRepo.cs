@@ -23,9 +23,11 @@ namespace DAL.Repos
             return db.SaveChanges() > 0;
         }
 
-        public bool Delete(int iD)
+        public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var product=Get(id);
+            db.Products.Remove(product);
+            return db.SaveChanges() > 0;
         }
 
         public List<Product> Get()
