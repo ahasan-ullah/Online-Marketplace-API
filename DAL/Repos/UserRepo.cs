@@ -29,7 +29,7 @@ namespace DAL.Repos
             var extuser = Get(id);
             if (orders!=null)
             {
-                extuser.IsActive = false;
+                extuser.IsDeleted=true;
                 return db.SaveChanges() > 0;
             }
             
