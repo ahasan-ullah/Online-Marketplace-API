@@ -34,5 +34,19 @@ namespace BLL.Services
             var user = DataAccessFactory.UserData().Get(id);
             return GetMapper().Map<UserDTO>(user);
         }
+
+        //creating new user
+        public static bool CreateUser(UserDTO obj)
+        {
+            var users = DataAccessFactory.UserData().Get(); 
+            var extuser=from u in users where u.Email == obj.Email select u;
+
+            if(extuser == null)
+            {
+                var user = GetMapper().Map<User>(obj);
+                return DataAccessFactory.UserData().Create(user);
+            }
+            return false;
+        }
     }
 }

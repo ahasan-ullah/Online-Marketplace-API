@@ -1,4 +1,5 @@
-﻿using BLL.Services;
+﻿using BLL.DTOs;
+using BLL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,13 @@ namespace Presentation_API.Controllers
         {
             var user=UserService.GetUser(id);
             return Request.CreateResponse(System.Net.HttpStatusCode.OK, user);
+        }
+        [HttpPost]
+        [Route("create")]
+        public HttpResponseMessage Create(UserDTO obj)
+        {
+            var newUser = UserService.CreateUser(obj);
+            return Request.CreateResponse(System.Net.HttpStatusCode.Created, newUser);
         }
     }
 }
