@@ -33,3 +33,4 @@ D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.cartandcartitemtab
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.incarttableforeignkeyadded.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.paymenttableadded.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.isactiveattributeaddedtousemodel.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.isdeletedattributeaddedtotheusermodel.resources
