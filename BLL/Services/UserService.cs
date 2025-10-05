@@ -24,8 +24,9 @@ namespace BLL.Services
         public static List<UserDTO> GetUser()
         {
             var users = DataAccessFactory.UserData().Get();
+            var extUsers = from u in users where u.IsDeleted == false select u;
 
-            return GetMapper().Map<List<UserDTO>>(users);
+            return GetMapper().Map<List<UserDTO>>(extUsers);
         }
 
         //getting single user by by
