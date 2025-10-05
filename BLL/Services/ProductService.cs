@@ -47,5 +47,11 @@ namespace BLL.Services
             var product=GetMapper().Map<Product>(obj);
             return DataAccessFactory.ProductData().Update(product);
         }
+
+        //deleting a product
+        public static bool DeleteProduct(int id)
+        {
+            return DataAccessFactory.ProductData().Delete(id);
+        }
     }
 }

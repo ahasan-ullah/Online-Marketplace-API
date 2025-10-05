@@ -97,6 +97,10 @@
     <Compile Include="Migrations\202509240848246_is deleted attribute added to the user model.Designer.cs">
       <DependentUpon>202509240848246_is deleted attribute added to the user model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202510050411404_is delete attribte added to prodcut table.cs" />
+    <Compile Include="Migrations\202510050411404_is delete attribte added to prodcut table.Designer.cs">
+      <DependentUpon>202510050411404_is delete attribte added to prodcut table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\ProductRepo.cs" />
@@ -133,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202509240848246_is deleted attribute added to the user model.resx">
       <DependentUpon>202509240848246_is deleted attribute added to the user model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202510050411404_is delete attribte added to prodcut table.resx">
+      <DependentUpon>202510050411404_is delete attribte added to prodcut table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

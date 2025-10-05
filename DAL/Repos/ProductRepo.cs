@@ -25,7 +25,14 @@ namespace DAL.Repos
 
         public bool Delete(int id)
         {
+            var orderPId=db.OrderItems.Where(oi=>oi.Id==id);
+            var cartPId=db.CartItems.Where(ci=>ci.Id==id);
             var product=Get(id);
+            if (orderPId != null && cartPId!=null)
+            {
+                product.isDeleted = true;
+                return db.SaveChanges() > 0;
+            }
             db.Products.Remove(product);
             return db.SaveChanges() > 0;
         }
