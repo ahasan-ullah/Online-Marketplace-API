@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using System.Net;
 
 namespace Presentation_API.Controllers
 {
@@ -16,7 +17,14 @@ namespace Presentation_API.Controllers
         public HttpResponseMessage GetOrder()
         {
             var orders = OrderService.GetOrder();
-            return Request.CreateResponse(System.Net.HttpStatusCode.OK, orders);
+            return Request.CreateResponse(HttpStatusCode.OK, orders);
+        }
+        [HttpGet]
+        [Route("{id}")]
+        public HttpResponseMessage GetOrder(int id)
+        {
+            var order=OrderService.GetOrder(id);
+            return Request.CreateResponse(HttpStatusCode.OK,order);
         }
     }
 }

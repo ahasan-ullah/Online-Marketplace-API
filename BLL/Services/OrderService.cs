@@ -27,5 +27,11 @@ namespace BLL.Services
             var orders=DataAccessFactory.OrderData().Get();
             return GetMapper().Map<List<OrderDTO>>(orders);
         }
+
+        public static OrderDTO GetOrder(int id)
+        {
+            var order=DataAccessFactory.OrderData().Get(id);
+            return GetMapper().Map<OrderDTO>(order);
+        }
     }
 }

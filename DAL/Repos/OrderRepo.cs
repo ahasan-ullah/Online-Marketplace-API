@@ -34,7 +34,7 @@ namespace DAL.Repos
 
         public Order Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Orders.Find(id);
         }
 
         public bool Update(Order obj)
