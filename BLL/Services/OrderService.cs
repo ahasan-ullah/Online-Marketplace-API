@@ -33,5 +33,12 @@ namespace BLL.Services
             var order=DataAccessFactory.OrderData().Get(id);
             return GetMapper().Map<OrderDTO>(order);
         }
+
+        public static bool CreateOrder(OrderDTO obj)
+        {
+            var order=GetMapper().Map<Order>(obj);
+            order.TotalAmount = obj.OrderItems.Sum(o => o.Quantity * o.UnitPrice);
+            return DataAccessFactory.OrderData().Create(order);
+        }
     }
 }

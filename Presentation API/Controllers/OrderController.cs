@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web;
 using System.Web.Http;
 using System.Net;
+using BLL.DTOs;
 
 namespace Presentation_API.Controllers
 {
@@ -25,6 +26,13 @@ namespace Presentation_API.Controllers
         {
             var order=OrderService.GetOrder(id);
             return Request.CreateResponse(HttpStatusCode.OK,order);
+        }
+        [HttpPost]
+        [Route("create")]
+        public HttpResponseMessage CreateOrder(OrderDTO obj)
+        {
+            var result=OrderService.CreateOrder(obj);
+            return Request.CreateResponse(HttpStatusCode.OK,"Order placed successfully");
         }
     }
 }

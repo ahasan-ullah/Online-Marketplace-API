@@ -19,7 +19,8 @@ namespace DAL.Repos
         }
         public bool Create(Order obj)
         {
-            throw new NotImplementedException();
+            db.Orders.Add(obj);
+            return db.SaveChanges() > 0;
         }
 
         public bool Delete(int id)
