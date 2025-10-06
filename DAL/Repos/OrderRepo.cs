@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class OrderRepo : IRepo<Order,int,bool>
+    internal class OrderRepo : IRepo<Order,int,bool>,IOrderFeature
     {
         MarketContext db;
 
@@ -42,6 +42,12 @@ namespace DAL.Repos
         public Order Get(int id)
         {
             return db.Orders.Find(id);
+        }
+
+        public List<Order> GetOrdersByBuyerId(int buyerId)
+        {
+            var orders = (from o in db.Orders where o.BuyerId == buyerId select o).ToList();
+            return orders;
         }
 
         public bool Update(Order obj)

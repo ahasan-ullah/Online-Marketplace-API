@@ -25,5 +25,10 @@ namespace DAL
         {
             return new OrderRepo();
         }
+
+        public static IOrderFeature OrderFeature()
+        {
+            return new OrderRepo();
+        }
     }
 }

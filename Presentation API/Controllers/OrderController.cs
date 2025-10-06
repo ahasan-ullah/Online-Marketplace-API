@@ -56,5 +56,12 @@ namespace Presentation_API.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.OK, "update failed");
         }
+        [HttpGet]
+        [Route("buyer/{buyerId}")]
+        public HttpResponseMessage GetOrderByBuyerId(int buyerId)
+        {
+            var result = OrderService.GetOrderByUser(buyerId);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
     }
 }
