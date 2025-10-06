@@ -40,5 +40,16 @@ namespace BLL.Services
             order.TotalAmount = obj.OrderItems.Sum(o => o.Quantity * o.UnitPrice);
             return DataAccessFactory.OrderData().Create(order);
         }
+
+        public static bool DeleteOrder(int id)
+        {
+            return DataAccessFactory.OrderData().Delete(id);
+        }
+
+        public static bool UpdateOrder(OrderDTO obj)
+        {
+            var order=GetMapper().Map<Order>(obj);
+            return DataAccessFactory.OrderData().Update(order);
+        }
     }
 }

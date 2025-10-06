@@ -34,5 +34,27 @@ namespace Presentation_API.Controllers
             var result=OrderService.CreateOrder(obj);
             return Request.CreateResponse(HttpStatusCode.OK,"Order placed successfully");
         }
+        [HttpDelete]
+        [Route("delete/{id}")]
+        public HttpResponseMessage DeleteOrder(int id)
+        {
+            var result = OrderService.DeleteOrder(id);
+            if (result == true)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, "Order deleted successfully");
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, "Order not found");
+        }
+        [HttpPatch]
+        [Route("update")]
+        public HttpResponseMessage UpdateOrder(OrderDTO obj)
+        {
+            var result = OrderService.UpdateOrder(obj);
+            if (result == true)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, "Order updated successfully");
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, "update failed");
+        }
     }
 }

@@ -25,7 +25,13 @@ namespace DAL.Repos
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var order=Get(id);
+            if (order != null)
+            {
+                order.Status = "Cancelled";
+                return db.SaveChanges() > 0;
+            }
+            else return false;
         }
 
         public List<Order> Get()
@@ -40,7 +46,13 @@ namespace DAL.Repos
 
         public bool Update(Order obj)
         {
-            throw new NotImplementedException();
+            var extOrder=Get(obj.Id);
+            if(extOrder != null)
+            {
+                extOrder.Status=obj.Status;
+                return db.SaveChanges() > 0;
+            }
+            return false;
         }
     }
 }
