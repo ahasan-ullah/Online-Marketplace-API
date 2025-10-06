@@ -12,6 +12,6 @@ namespace BLL.DTOs
         public int Id { get; set; }
         public int BuyerId { get; set; }
         public DateTime CreatedAt { get; set; }
-        public virtual ICollection<CartItem> CartItems { get; set; }
+        public virtual ICollection<CartItemDTO> CartItems { get; set; }
     }
 }

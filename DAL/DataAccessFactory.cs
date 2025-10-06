@@ -30,5 +30,9 @@ namespace DAL
         {
             return new OrderRepo();
         }
+        public static IRepo<Cart,int,bool> CartData()
+        {
+            return new CartRepo();
+        }
     }
 }
