@@ -33,7 +33,7 @@ namespace DAL.Repos
 
         public Cart Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Carts.Find(id);
         }
 
         public bool Update(Cart obj)

@@ -23,8 +23,13 @@ namespace BLL.Services
         }
         public static List<CartDTO> GetCart()
         {
-            var cart = DataAccessFactory.CartData().Get();
-            return GetMapper().Map<List<CartDTO>>(cart);
+            var carts = DataAccessFactory.CartData().Get();
+            return GetMapper().Map<List<CartDTO>>(carts);
+        }
+        public static CartDTO GetCart(int id)
+        {
+            var cart = DataAccessFactory.CartData().Get(id);
+            return GetMapper().Map<CartDTO>(cart);
         }
     }
 }
