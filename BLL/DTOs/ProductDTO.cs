@@ -16,6 +16,7 @@ namespace BLL.DTOs
         public int Stock { get; set; }
         public string Category { get; set; }
         public int SellerId { get; set; }
+        public bool isDeleted { get; set; }
         public DateTime CreatedAt { get; set; }
     }
 }

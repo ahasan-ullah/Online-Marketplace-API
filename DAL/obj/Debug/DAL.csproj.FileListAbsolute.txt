@@ -57,3 +57,4 @@ E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.csproj.Up2Date
 E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.dll
 E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.pdb
 E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.isdeleteattribteaddedtoprodcuttable.resources
+D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.isdeleteattribteaddedtoprodcuttable.resources
