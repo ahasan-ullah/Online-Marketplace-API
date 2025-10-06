@@ -41,5 +41,12 @@ namespace Presentation_API.Controllers
             var result= ProductService.UpdateProduct(obj);
             return Request.CreateResponse(HttpStatusCode.OK, "Product updated succressfully");
         }
+        [HttpDelete]
+        [Route("delete/{id}")]
+        public HttpResponseMessage Delete(int id)
+        {
+            var result=ProductService.DeleteProduct(id);
+            return Request.CreateResponse(HttpStatusCode.OK, "Product Deleted Successfully");
+        }
     }
 }

@@ -29,6 +29,8 @@ namespace DAL.EF.Tables
         public int SellerId { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; }
+        [Required]
+        public bool isDeleted { get; set; }
 
         public virtual User Seller { get; set; }
     }

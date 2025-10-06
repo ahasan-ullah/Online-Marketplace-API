@@ -24,7 +24,8 @@ namespace BLL.Services
         public static List<ProductDTO> GetProduct()
         {
             var products = DataAccessFactory.ProductData().Get();
-            return GetMapper().Map<List<ProductDTO>>(products);
+            var extProducts=from p in products where p.isDeleted==false select p;
+            return GetMapper().Map<List<ProductDTO>>(extProducts);
         }
 
         //getting products based on the id
@@ -46,6 +47,12 @@ namespace BLL.Services
         {
             var product=GetMapper().Map<Product>(obj);
             return DataAccessFactory.ProductData().Update(product);
+        }
+
+        //deleting a product
+        public static bool DeleteProduct(int id)
+        {
+            return DataAccessFactory.ProductData().Delete(id);
         }
     }
 }

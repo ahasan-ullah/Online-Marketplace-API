@@ -24,3 +24,17 @@ D:\Ahasan\Online-Marketplace-API\BLL\obj\Debug\BLL.dll
 D:\Ahasan\Online-Marketplace-API\BLL\obj\Debug\BLL.pdb
 D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\AutoMapper.dll
 D:\Ahasan\Online-Marketplace-API\BLL\bin\Debug\AutoMapper.xml
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\BLL.dll
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\BLL.pdb
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\AutoMapper.dll
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\DAL.dll
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\EntityFramework.dll
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\DAL.pdb
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\DAL.dll.config
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\AutoMapper.xml
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\bin\Debug\EntityFramework.xml
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\obj\Debug\BLL.csproj.Up2Date
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\obj\Debug\BLL.dll
+E:\Personal\Projects\C#\Online-Marketplace-API\BLL\obj\Debug\BLL.pdb
