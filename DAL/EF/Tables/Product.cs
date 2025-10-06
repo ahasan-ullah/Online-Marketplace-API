@@ -10,7 +10,6 @@ namespace DAL.EF.Tables
 {
     public class Product
     {
-        [Required]
         public int Id { get; set; }
         [Required]
         [StringLength(20)]

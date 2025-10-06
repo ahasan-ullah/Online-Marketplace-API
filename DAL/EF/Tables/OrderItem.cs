@@ -10,7 +10,6 @@ namespace DAL.EF.Tables
 {
     public class OrderItem
     {
-        [Required]
         public int Id { get; set; }
         [Required]
         [ForeignKey("Order")]
