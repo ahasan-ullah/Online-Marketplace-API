@@ -28,7 +28,7 @@ namespace DAL.Repos
 
         public List<Cart> Get()
         {
-            throw new NotImplementedException();
+            return db.Carts.ToList();
         }
 
         public Cart Get(int id)
