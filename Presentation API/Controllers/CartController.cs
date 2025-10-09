@@ -34,5 +34,16 @@ namespace Presentation_API.Controllers
             var result = CartService.CreateCart(obj);
             return Request.CreateResponse(HttpStatusCode.OK, "Product added to cart");
         }
+        [HttpPatch]
+        [Route("update")]
+        public HttpResponseMessage UpdateCart(CartItemDTO obj)
+        {
+            var result = CartService.UpdateCart(obj);
+            if (result == true)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, "Cart updated successfully");
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, "update failed");
+        }
     }
 }

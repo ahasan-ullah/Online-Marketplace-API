@@ -60,6 +60,7 @@
     <Compile Include="EF\Tables\Product.cs" />
     <Compile Include="EF\Tables\User.cs" />
     <Compile Include="EF\MarketContext.cs" />
+    <Compile Include="Interfaces\ICartFeature.cs" />
     <Compile Include="Interfaces\IOrderFeature.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202509220856362_test.cs" />

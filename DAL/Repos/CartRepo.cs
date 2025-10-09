@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class CartRepo : IRepo<Cart, int, bool>
+    internal class CartRepo : IRepo<Cart, int, bool>, ICartFeature
     {
         MarketContext db;
         public CartRepo()
@@ -37,9 +37,31 @@ namespace DAL.Repos
             return db.Carts.Find(id);
         }
 
+        
+
+        //cartitem remove func should be added
+
+        //this is for cart repo update
         public bool Update(Cart obj)
         {
             throw new NotImplementedException();
+        }
+
+        public CartItem GetCartItem(int id)
+        {
+            var cartItem=db.CartItems.Find(id);
+            return cartItem;
+        }
+
+        public bool UpdateCartItem(CartItem obj)
+        {
+            var extCartItem = GetCartItem(obj.Id);
+            if (extCartItem != null)
+            {
+                extCartItem.Quantity = obj.Quantity;
+                return db.SaveChanges() > 0;
+            }
+            return false;
         }
     }
 }

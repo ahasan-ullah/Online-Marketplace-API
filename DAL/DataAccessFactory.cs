@@ -34,5 +34,9 @@ namespace DAL
         {
             return new CartRepo();
         }
+        public static ICartFeature CartFeature()
+        {
+            return new CartRepo();
+        }
     }
 }
