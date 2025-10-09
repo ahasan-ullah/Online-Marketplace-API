@@ -22,6 +22,8 @@ namespace DAL.Repos
             return db.SaveChanges() > 0;
         }
 
+
+        //cart delete
         public bool Delete(int id)
         {
             throw new NotImplementedException();
@@ -37,7 +39,7 @@ namespace DAL.Repos
             return db.Carts.Find(id);
         }
 
-        
+
 
         //cartitem remove func should be added
 
@@ -46,6 +48,10 @@ namespace DAL.Repos
         {
             throw new NotImplementedException();
         }
+
+
+        //cart item repo
+
 
         public CartItem GetCartItem(int id)
         {
@@ -62,6 +68,11 @@ namespace DAL.Repos
                 return db.SaveChanges() > 0;
             }
             return false;
+        }
+
+        public bool DeleteCartItem(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
