@@ -1,4 +1,5 @@
-﻿using BLL.Services;
+﻿using BLL.DTOs;
+using BLL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,13 @@ namespace Presentation_API.Controllers
         {
             var result = CartService.GetCart(id);
             return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+        [HttpPost]
+        [Route("create")]
+        public HttpResponseMessage CreateOrder(CartDTO obj)
+        {
+            var result = CartService.CreateCart(obj);
+            return Request.CreateResponse(HttpStatusCode.OK, "Product added to cart");
         }
     }
 }

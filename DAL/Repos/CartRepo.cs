@@ -18,7 +18,8 @@ namespace DAL.Repos
         }
         public bool Create(Cart obj)
         {
-            throw new NotImplementedException();
+            db.Carts.Add(obj);
+            return db.SaveChanges() > 0;
         }
 
         public bool Delete(int id)

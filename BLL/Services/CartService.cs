@@ -31,5 +31,10 @@ namespace BLL.Services
             var cart = DataAccessFactory.CartData().Get(id);
             return GetMapper().Map<CartDTO>(cart);
         }
+        public static bool CreateCart(CartDTO obj)
+        {
+            var cart = GetMapper().Map<Cart>(obj);
+            return DataAccessFactory.CartData().Create(cart);
+        }
     }
 }
