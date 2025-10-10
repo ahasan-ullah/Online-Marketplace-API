@@ -10,7 +10,6 @@ namespace DAL.EF.Tables
 {
     public class Payment
     {
-        [Required]
         public int Id { get; set; }
         [Required]
         [ForeignKey("Order")]

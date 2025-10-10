@@ -20,5 +20,23 @@ namespace DAL
         {
             return new ProductRepo();
         }
+
+        public static IRepo<Order,int,bool> OrderData()
+        {
+            return new OrderRepo();
+        }
+
+        public static IOrderFeature OrderFeature()
+        {
+            return new OrderRepo();
+        }
+        public static IRepo<Cart,int,bool> CartData()
+        {
+            return new CartRepo();
+        }
+        public static ICartFeature CartFeature()
+        {
+            return new CartRepo();
+        }
     }
 }

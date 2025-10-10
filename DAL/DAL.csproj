@@ -60,6 +60,8 @@
     <Compile Include="EF\Tables\Product.cs" />
     <Compile Include="EF\Tables\User.cs" />
     <Compile Include="EF\MarketContext.cs" />
+    <Compile Include="Interfaces\ICartFeature.cs" />
+    <Compile Include="Interfaces\IOrderFeature.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202509220856362_test.cs" />
     <Compile Include="Migrations\202509220856362_test.Designer.cs">
@@ -103,6 +105,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\CartRepo.cs" />
+    <Compile Include="Repos\OrderRepo.cs" />
     <Compile Include="Repos\ProductRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>

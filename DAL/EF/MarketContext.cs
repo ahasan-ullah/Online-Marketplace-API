@@ -14,28 +14,28 @@ namespace DAL.EF
         {
             base.OnModelCreating(modelBuilder);
 
-            // Order → Buyer (User) — prevent cascade delete
+            // Order → Buyer (User)
             modelBuilder.Entity<Order>()
                 .HasRequired(o => o.Buyer)
                 .WithMany(u => u.Orders)
                 .HasForeignKey(o => o.BuyerId)
                 .WillCascadeOnDelete(false);
 
-            // Product → Seller (User) — prevent cascade delete
+            // Product → Seller (User)
             modelBuilder.Entity<Product>()
                 .HasRequired(p => p.Seller)
                 .WithMany(u => u.Products)
                 .HasForeignKey(p => p.SellerId)
                 .WillCascadeOnDelete(false);
 
-            // OrderItem → Order — prevent cascade delete
+            // OrderItem → Order
             modelBuilder.Entity<OrderItem>()
                 .HasRequired(oi => oi.Order)
                 .WithMany(o => o.OrderItems)
                 .HasForeignKey(oi => oi.OrderId)
                 .WillCascadeOnDelete(false);
 
-            // OrderItem → Product — prevent cascade delete
+            // OrderItem → Product
             modelBuilder.Entity<OrderItem>()
                 .HasRequired(oi => oi.Product)
                 .WithMany()

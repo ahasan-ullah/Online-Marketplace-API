@@ -10,7 +10,6 @@ namespace DAL.EF.Tables
 {
     public class CartItem
     {
-        [Required]
         public int Id { get; set; }
         [Required]
         [ForeignKey("Cart")]

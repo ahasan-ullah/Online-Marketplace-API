@@ -9,7 +9,6 @@ namespace DAL.EF.Tables
 {
     public class User
     {
-        [Required]
         public int Id { get; set; }
         [Required]
         [StringLength(20)]
