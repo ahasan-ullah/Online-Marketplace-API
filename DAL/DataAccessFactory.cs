@@ -43,5 +43,9 @@ namespace DAL
         {
             return new PaymentRepo();
         }
+        public static IPaymentFeature PaymentFeature()
+        {
+            return new PaymentRepo();
+        }
     }
 }

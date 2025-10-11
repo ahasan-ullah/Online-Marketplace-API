@@ -62,6 +62,7 @@
     <Compile Include="EF\MarketContext.cs" />
     <Compile Include="Interfaces\ICartFeature.cs" />
     <Compile Include="Interfaces\IOrderFeature.cs" />
+    <Compile Include="Interfaces\IPaymentFeature.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202509220856362_test.cs" />
     <Compile Include="Migrations\202509220856362_test.Designer.cs">

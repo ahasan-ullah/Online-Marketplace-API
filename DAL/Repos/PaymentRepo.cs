@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class PaymentRepo : IRepo<Payment,int,bool>
+    internal class PaymentRepo : IRepo<Payment,int,bool>,IPaymentFeature
     {
         MarketContext db;
         public PaymentRepo()
@@ -35,6 +35,12 @@ namespace DAL.Repos
         public Payment Get(int id)
         {
             return db.Payments.Find(id);
+        }
+
+        public List<Payment> GetPaymentByUser(int id)
+        {
+            var payments = (from p in db.Payments where p.BuyerId == id select p).ToList();
+            return payments;
         }
 
         public bool Update(Payment obj)

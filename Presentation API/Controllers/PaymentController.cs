@@ -45,5 +45,12 @@ namespace Presentation_API.Controllers
             }
             else return Request.CreateResponse(HttpStatusCode.NotFound, "failed");
         }
+        [HttpGet]
+        [Route("buyer/{buyerId}")]
+        public HttpResponseMessage GetPaymentsByUser(int buyerId)
+        {
+            var payments=PaymentService.GetPaymentByUser(buyerId);
+            return Request.CreateResponse(HttpStatusCode.OK, payments);
+        }
     }
 }
