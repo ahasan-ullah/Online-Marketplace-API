@@ -49,5 +49,10 @@ namespace BLL.Services
         {
             return DataAccessFactory.CartFeature().DeleteCartItem(id);
         }
+        public static CartItemDTO GetCartItem(int id)
+        {
+            var cart = DataAccessFactory.CartFeature().GetCartItem(id);
+            return GetMapper().Map<CartItemDTO>(cart);
+        }
     }
 }

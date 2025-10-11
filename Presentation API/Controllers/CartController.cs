@@ -67,5 +67,13 @@ namespace Presentation_API.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.OK, "delete failed");
         }
+
+        [HttpGet]
+        [Route("item/{id}")]
+        public HttpResponseMessage GetCartItem(int id)
+        {
+            var result = CartService.GetCartItem(id);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
     }
 }
