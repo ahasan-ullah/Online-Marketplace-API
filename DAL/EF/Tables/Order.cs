@@ -17,8 +17,6 @@ namespace DAL.EF.Tables
         [Required]
         public decimal TotalAmount { get; set; }
         [Required]
-        public string Status { get; set; }
-        [Required]
         public DateTime CreatedAt { get; set; }
 
         public virtual User Buyer { get; set; }

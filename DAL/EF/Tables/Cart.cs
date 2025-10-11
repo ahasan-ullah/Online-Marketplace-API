@@ -14,7 +14,6 @@ namespace DAL.EF.Tables
         [Required]
         [ForeignKey("Buyer")]
         public int BuyerId { get; set; }
-        [Required]
         public DateTime CreatedAt { get; set; }
 
         public virtual User Buyer { get; set; }
