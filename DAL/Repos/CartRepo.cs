@@ -85,5 +85,11 @@ namespace DAL.Repos
         {
             return db.CartItems.ToList();
         }
+
+        public List<Cart> getCartByUser(int id)
+        {
+            var carts = (from c in db.Carts where c.BuyerId == id select c).ToList();
+            return carts;
+        }
     }
 }

@@ -13,5 +13,6 @@ namespace DAL.Interfaces
         CartItem GetCartItem(int id);
         bool DeleteCartItem(int id);
         List<CartItem> GetAllCartItems();
+        List<Cart> getCartByUser(int id);
     }
 }

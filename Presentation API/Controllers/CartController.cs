@@ -83,5 +83,12 @@ namespace Presentation_API.Controllers
             var result = CartService.GetCartItem(id);
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
+        [HttpGet]
+        [Route("buyer/{buyerId}")]
+        public HttpResponseMessage GetCartByUser(int buyerId)
+        {
+            var result = CartService.GetCartByUser(buyerId);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
     }
 }
