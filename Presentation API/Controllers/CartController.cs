@@ -47,12 +47,23 @@ namespace Presentation_API.Controllers
         }
         [HttpDelete]
         [Route("delete/{id}")]
-        public HttpResponseMessage DeletCart(int id)
+        public HttpResponseMessage DeleteCart(int id)
         {
             var result = CartService.DeleteCart(id);
             if (result == true)
             {
                 return Request.CreateResponse(HttpStatusCode.OK, "Cart deleted successfully");
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, "delete failed");
+        }
+        [HttpDelete]
+        [Route("delete/item/{id}")]
+        public HttpResponseMessage DeleteCartItem(int id)
+        {
+            var result = CartService.DeleteCartItem(id);
+            if (result == true)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, "Cart item deleted successfully");
             }
             return Request.CreateResponse(HttpStatusCode.OK, "delete failed");
         }

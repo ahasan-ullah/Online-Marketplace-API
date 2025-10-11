@@ -76,7 +76,9 @@ namespace DAL.Repos
 
         public bool DeleteCartItem(int id)
         {
-            throw new NotImplementedException();
+            var cartItem = GetCartItem(id);
+            db.CartItems.Remove(cartItem);
+            return db.SaveChanges() > 0;
         }
     }
 }

@@ -45,5 +45,9 @@ namespace BLL.Services
         {
             return DataAccessFactory.CartData().Delete(id);
         }
+        public static bool DeleteCartItem(int id)
+        {
+            return DataAccessFactory.CartFeature().DeleteCartItem(id);
+        }
     }
 }
