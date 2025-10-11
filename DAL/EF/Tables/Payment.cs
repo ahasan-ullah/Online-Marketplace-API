@@ -15,14 +15,18 @@ namespace DAL.EF.Tables
         [ForeignKey("Order")]
         public int OrderId { get; set; }
         [Required]
+        [ForeignKey("Buyer")]
+        public int BuyerId { get; set; }
+        [Required]
         public decimal Amount { get; set; }
         [Required]
         public string PaymentMethod { get; set; }
         [Required]
-        public string Status { get; set; } // Pending, Completed, Failed
+        public string Status { get; set; }
         [Required]
         public string TransactionId { get; set; }
 
         public virtual Order Order { get; set; }
+        public virtual User Buyer { get; set; }
     }
 }

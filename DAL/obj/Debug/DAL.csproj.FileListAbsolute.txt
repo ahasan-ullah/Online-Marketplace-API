@@ -59,3 +59,4 @@ E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.pdb
 E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.isdeleteattribteaddedtoprodcuttable.resources
 D:\Ahasan\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.isdeleteattribteaddedtoprodcuttable.resources
 E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.cartitemondeleteadded.resources
+E:\Personal\Projects\C#\Online-Marketplace-API\DAL\obj\Debug\DAL.Migrations.addedbuyerpaymentrelation.resources

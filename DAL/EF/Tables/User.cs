@@ -29,5 +29,6 @@ namespace DAL.EF.Tables
 
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Payment> Payments { get; set; }
     }
 }
