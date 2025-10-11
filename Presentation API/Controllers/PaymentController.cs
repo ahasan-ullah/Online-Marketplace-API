@@ -27,5 +27,12 @@ namespace Presentation_API.Controllers
             var result = PaymentService.GetPayment();
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
+        [HttpGet]
+        [Route("{id}")]
+        public HttpResponseMessage GetPayment(int id)
+        {
+            var result = PaymentService.GetPayment(id);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
     }
 }

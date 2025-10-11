@@ -34,7 +34,7 @@ namespace DAL.Repos
 
         public Payment Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Payments.Find(id);
         }
 
         public bool Update(Payment obj)
