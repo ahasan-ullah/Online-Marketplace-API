@@ -41,5 +41,9 @@ namespace BLL.Services
             var cartItems = GetMapper().Map<CartItem>(obj);
             return DataAccessFactory.CartFeature().UpdateCartItem(cartItems);
         }
+        public static bool DeleteCart(int id)
+        {
+            return DataAccessFactory.CartData().Delete(id);
+        }
     }
 }

@@ -14,33 +14,50 @@ namespace DAL.EF
         {
             base.OnModelCreating(modelBuilder);
 
-            // Order → Buyer (User)
+            // Order -> Buyer (User)
             modelBuilder.Entity<Order>()
                 .HasRequired(o => o.Buyer)
                 .WithMany(u => u.Orders)
                 .HasForeignKey(o => o.BuyerId)
                 .WillCascadeOnDelete(false);
 
-            // Product → Seller (User)
+            // Product -> Seller (User)
             modelBuilder.Entity<Product>()
                 .HasRequired(p => p.Seller)
                 .WithMany(u => u.Products)
                 .HasForeignKey(p => p.SellerId)
                 .WillCascadeOnDelete(false);
 
-            // OrderItem → Order
+            // OrderItem -> Order
             modelBuilder.Entity<OrderItem>()
                 .HasRequired(oi => oi.Order)
                 .WithMany(o => o.OrderItems)
                 .HasForeignKey(oi => oi.OrderId)
                 .WillCascadeOnDelete(false);
 
-            // OrderItem → Product
+            // OrderItem -> Product
             modelBuilder.Entity<OrderItem>()
                 .HasRequired(oi => oi.Product)
                 .WithMany()
                 .HasForeignKey(oi => oi.ProductId)
                 .WillCascadeOnDelete(false);
+
+            //Cartitem-> Cart
+
+            modelBuilder.Entity<CartItem>()
+                .HasRequired(ci => ci.Cart)
+                .WithMany(c => c.CartItems)
+                .HasForeignKey(ci => ci.CartId)
+                .WillCascadeOnDelete(true);
+
+            //Cartitem-> Product
+
+            modelBuilder.Entity<CartItem>()
+                .HasRequired(ci => ci.Product)
+                .WithMany()
+                .HasForeignKey(ci => ci.ProductId)
+                .WillCascadeOnDelete(false);
+
         }
 
         public DbSet<User> Users { get; set; }

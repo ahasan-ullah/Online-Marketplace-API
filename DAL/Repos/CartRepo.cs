@@ -26,7 +26,11 @@ namespace DAL.Repos
         //cart delete
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var cart = db.Carts.Find(id);
+            if (cart == null) return false;
+
+            db.Carts.Remove(cart);
+            return db.SaveChanges() > 0;
         }
 
         public List<Cart> Get()
