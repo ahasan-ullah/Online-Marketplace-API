@@ -34,5 +34,16 @@ namespace Presentation_API.Controllers
             var result = PaymentService.GetPayment(id);
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
+        [HttpPatch]
+        [Route("update")]
+        public HttpResponseMessage UpdatePayment(PaymentDTO obj)
+        {
+            var result=PaymentService.UpdatePayment(obj);
+            if (result)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, "Payment status changed");
+            }
+            else return Request.CreateResponse(HttpStatusCode.NotFound, "failed");
+        }
     }
 }

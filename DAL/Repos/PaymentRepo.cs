@@ -39,7 +39,13 @@ namespace DAL.Repos
 
         public bool Update(Payment obj)
         {
-            throw new NotImplementedException();
+            var payment = db.Payments.Find(obj.Id);
+            if(payment != null)
+            {
+                payment.Status=obj.Status;
+                return db.SaveChanges() > 0;
+            }
+            return false;
         }
     }
 }

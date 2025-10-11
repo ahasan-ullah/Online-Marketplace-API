@@ -36,5 +36,10 @@ namespace BLL.Services
             var payment=DataAccessFactory.PaymentData().Get(id);
             return GetMapper().Map<PaymentDTO>(payment);
         }
+        public static bool UpdatePayment(PaymentDTO obj)
+        {
+            var payment= GetMapper().Map<Payment>(obj);
+            return DataAccessFactory.PaymentData().Update(payment);
+        }
     }
 }
