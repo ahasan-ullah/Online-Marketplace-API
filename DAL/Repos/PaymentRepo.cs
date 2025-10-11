@@ -29,7 +29,7 @@ namespace DAL.Repos
 
         public List<Payment> Get()
         {
-            throw new NotImplementedException();
+            return db.Payments.ToList();
         }
 
         public Payment Get(int id)
