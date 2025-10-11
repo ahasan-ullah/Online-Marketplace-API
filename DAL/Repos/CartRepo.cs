@@ -80,5 +80,10 @@ namespace DAL.Repos
             db.CartItems.Remove(cartItem);
             return db.SaveChanges() > 0;
         }
+
+        public List<CartItem> GetAllCartItems()
+        {
+            return db.CartItems.ToList();
+        }
     }
 }

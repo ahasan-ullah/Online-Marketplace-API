@@ -69,6 +69,14 @@ namespace Presentation_API.Controllers
         }
 
         [HttpGet]
+        [Route("item/all")]
+        public HttpResponseMessage GetCartItem()
+        {
+            var result = CartService.GetCartItem();
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [HttpGet]
         [Route("item/{id}")]
         public HttpResponseMessage GetCartItem(int id)
         {
